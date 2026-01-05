@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: simple-web
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/Makko-Dev/simple-web-helm.git 
+    targetRevision: main
+    path: simple-web
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: simple-web
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - createNamespace=true
