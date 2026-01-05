@@ -15,4 +15,4 @@ service:
 
 content:
   title: "Hello GitOps World"
-  body: "Edit values.yaml, commit, ArgoCD sync, page changes."
+  body: "Edit values.yaml, commit, ArgoCD sync, page changes. >>>>> change number 1"
