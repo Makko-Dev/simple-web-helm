@@ -15,4 +15,4 @@ service:
 
 content:
   title: "Hello GitOps World"
-  body: "Edit values.yaml, commit, ArgoCD sync, page changes. >>>>> change number 1"
+  body: "Edit values.yaml, commit, ArgoCD sync, page changes. >>>>> change number 2 - after adding second k3d cluster"
